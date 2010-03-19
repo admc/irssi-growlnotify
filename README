@@ -1,0 +1,13 @@
+-- Irssi-growlnotify --
+
+After spending hours trying to use the available solutions for this using Mac:Growl and CPAN etc I fully gave up and googled for a working alternative, which I found a hack upon a hack for linux, so I changed it a bit for MacOSX.
+
+1. You need the perl bindings working in irssi (so you need to build from source): http://irssi.org/files/irssi-0.8.14.tar.gz
+2. You will get compile errors unless you pass these compile flags: --build=x86_64-apple-darwin10.2.0 ARCHFLAGS="-arch x86_64"
+	(taken from: http://bugs.irssi.org/index.php?do=details&task_id=543)
+3. Finish building Irssi
+4. Download Growl for Mac: http://growl.cachefly.net/Growl-1.2.dmg, install
+5. Install growlnotify from the Extras in the Growl package
+6. Put irssi-growlnotify.pl in ~/.irssi/scripts/autorun
+7. Run Irssi
+8. Enjoy knowing when people talk to you in Irssi -- WIN!
