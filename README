@@ -1,4 +1,5 @@
--- Irssi-growlnotify --
+Irssi-growlnotify
+-----------------
 
 After spending hours trying to use the available solutions for this using Mac:Growl and CPAN etc I fully gave up and googled for a working alternative, which I found a hack upon a hack for linux, so I changed it a bit for MacOSX.
 
