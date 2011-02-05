@@ -56,7 +56,7 @@ sub filewrite {
 	#print FILE $text . "\n";
     #    close (FILE);
     $text =~ s/\n/ /;
-    $text =~ s/[<@&]//g;
+    $text =~ s/[<@&']//g;
 
     my @values = split(' ', $text, 2);
 		system("growlnotify -t Irssi -n Irssi -s -m '$values[1]' '$values[0]'");
